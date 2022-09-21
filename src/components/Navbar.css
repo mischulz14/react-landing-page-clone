@@ -1,0 +1,74 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  margin: 0.5rem auto;
+  position: fixed;
+  color: rgba(255, 255, 255, 0.658);
+  font-weight: bold;
+  z-index: 1000;
+  margin-top: 0;
+  padding: 0.5rem 0;
+  transition: all 0.25s ease-out;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-left: 18vw;
+}
+
+.nav__list li {
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.nav__list li:hover {
+  color: white;
+}
+
+.nav.active li:hover {
+  color: rgb(35, 97, 211);
+}
+
+.nav__logo {
+  height: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.nav__contact {
+  font-size: 1rem;
+  margin-right: 20vw;
+  background-color: #f5a623;
+  color: white;
+  font-family: inherit;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.25s ease-out;
+}
+
+.nav__contact:hover {
+  scale: 1.05;
+  background-color: #cf8b1c;
+}
+
+/* helper classes  */
+
+.active {
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
+  background: rgba(255, 255, 255, 0.7);
+  color: rgb(48, 48, 48);
+  margin-top: 0;
+}

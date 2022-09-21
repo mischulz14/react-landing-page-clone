@@ -1,23 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Companies from './components/Companies';
+import Contact from './components/Contact';
+import Cta from './components/Cta';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import Highlights from './components/Highlights';
+import Navbar from './components/Navbar';
+import ProductSection from './components/ProductSection';
+import Testimonials from './components/Testimonials';
+
+document.title = 'Landing Page';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Navbar />
       </header>
+      <main>
+        <Hero />
+        <ProductSection />
+        <Companies />
+        <Testimonials />
+        <Highlights />
+        <Cta />
+        <Contact />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

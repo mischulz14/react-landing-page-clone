@@ -1,0 +1,99 @@
+h4 {
+  padding-left: 2rem;
+  font-weight: lighter;
+}
+
+.highlights {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.highlights p {
+  padding: 0rem 1.5rem 0rem 1.5rem;
+  font-size: 1.3rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+.highlights img {
+  width: 100%;
+}
+
+.highlights__wrapper {
+  width: 45vw;
+  margin: 0 auto;
+}
+
+.highlights__grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 65% 35%;
+  grid-template-areas:
+    'left right-top'
+    'left right-bottom';
+}
+
+.grid-left {
+  grid-area: left;
+  background-color: #e8f1ff;
+}
+
+.grid-left p {
+  font-size: 1.75rem;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+}
+
+.grid-right-top {
+  background-color: #e4e4e4;
+  grid-area: right-top;
+  width: 100%;
+}
+
+.grid-right-top p,
+.grid-right-bottom p {
+  padding: 1rem 1rem 0rem 1rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.grid-right-top .highlight__link,
+.grid-right-bottom .highlight__link {
+  padding-left: 1rem;
+}
+
+.grid-right-top img,
+.grid-right-bottom img {
+  width: 100%;
+}
+
+.grid-right-bottom {
+  grid-area: right-bottom;
+  width: 100%;
+  background-color: #f8f4ee;
+}
+
+.highlight__link {
+  padding: 0rem 1.5rem 1.5rem;
+  display: block;
+  font-weight: bold;
+  color: #4284f3;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.highlight__link::after {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0.125em 0.5em;
+  width: 12px;
+  height: 12px;
+  background-image: url('https://digitaltoucan.com/wp-content/themes/digital-toucan/images/ui-text-link-arrow.svg');
+  background-size: 100% 100%;
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}

@@ -1,0 +1,72 @@
+.cta {
+  background-color: #f8f4ee;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 5rem;
+}
+
+.cta p {
+  width: 80%;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.cta__wrapper {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.cta__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: auto;
+  padding-left: 2rem;
+}
+
+.cta__icon {
+  width: 22rem;
+}
+
+.cta__button-articles {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: white;
+  font-family: 'Open sans', sans-serif;
+  padding: 0.8rem 1.2rem;
+  color: #f5a623;
+  border: 1px #f5a623 solid;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: all 0.25s ease-out;
+}
+
+.cta__button-articles:hover {
+  background-color: #ffefd5;
+}
+
+.cta__button-visit {
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background-color: #f5a623;
+  padding: 0.7rem 1.5rem;
+  border: transparent 1px solid;
+  transition: all 0.25s ease-out;
+}
+
+.cta__button-visit:hover {
+  scale: 1.05;
+  background-color: #cf8b1c;
+}

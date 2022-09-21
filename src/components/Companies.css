@@ -1,0 +1,55 @@
+.companies {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 12rem;
+  margin-bottom: 8rem;
+}
+
+.companies h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 0 38rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+.flying-person {
+  width: 13rem;
+  position: absolute;
+  top: -12rem;
+  left: 27%;
+}
+
+.companies__container-1,
+.companies__container-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 2rem;
+}
+
+.company-icon {
+  width: 8rem;
+  opacity: 0.6;
+  filter: grayscale(1);
+  transition: all 0.25s ease-out;
+}
+
+.companies__buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.companies__buttons button {
+  height: 2px;
+  background-color: rgba(211, 211, 211, 0.616);
+  border: none;
+  width: 1.5rem;
+  cursor: pointer;
+}

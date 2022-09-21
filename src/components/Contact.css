@@ -1,0 +1,35 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.contact__icon {
+  width: 14rem;
+}
+
+.contact__heading {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.contact__btn {
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  background-color: #f5a623;
+  padding: 0.7rem 1.2rem;
+  border: 1px transparent solid;
+  transition: all 0.25s ease-out;
+}
+
+.contact__btn:hover {
+  scale: 1.05;
+  background-color: #cf8b1c;
+}
