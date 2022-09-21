@@ -6,13 +6,14 @@ selecting the hero section and the nav section. It is then getting the coordinat
 section. If the y coordinate of the hero section is 0, the active class is removed from the nav
 section. If the y coordinate of the hero section is not 0, the active class is added to the nav
 section. */
-window.addEventListener('scroll', () => {
-  const hero = document.querySelector('.hero-section');
-  const nav = document.querySelector('.nav');
-  const heroCoords = hero.getBoundingClientRect();
-  if (heroCoords.y === 0) nav.classList.remove('active');
-  else nav.classList.add('active');
-});
+// eslint doesn't let me do this
+// window.addEventListener('scroll', () => {
+//   const hero = document.querySelector('.hero-section');
+//   const nav = document.querySelector('.nav');
+//   const heroCoords = hero.getBoundingClientRect();
+//   if (heroCoords.y === 0) nav.classList.remove('active');
+//   else nav.classList.add('active');
+// });
 
 export default function Hero() {
   return (

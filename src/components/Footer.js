@@ -27,7 +27,7 @@ export default function Footer() {
             </svg>
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="mail footer__icon"
+              className="mail footer__icon"
               viewBox="0 0 512 512"
             >
               <title>Mail</title>
@@ -40,16 +40,16 @@ export default function Footer() {
                 ry="40"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="32"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="32"
               />
               <path
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="32"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="32"
                 d="M112 160l144 112 144-112"
               />
             </svg>
@@ -85,8 +85,10 @@ export default function Footer() {
           </ul>
         </div>
       </div>
-      <span className="divider"></span>
-      <span className='copyright'>Copyright © 2022 Digital Toucan. All Rights Reserved.</span>
+      <span className="divider" />
+      <span className="copyright">
+        Copyright © 2022 Digital Toucan. All Rights Reserved.
+      </span>
     </section>
   );
 }

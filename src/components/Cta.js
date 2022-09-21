@@ -7,7 +7,9 @@ export default function Cta() {
       <div className="cta__wrapper">
         <div className="cta__content">
           <p>Check out all our Jira apps on the Atlassian marketplace today.</p>
-          <button className='cta__button-visit'>Visit Atlassian Marketplace</button>
+          <button className="cta__button-visit">
+            Visit Atlassian Marketplace
+          </button>
         </div>
         <img
           className="cta__icon"
