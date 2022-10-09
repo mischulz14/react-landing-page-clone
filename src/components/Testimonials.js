@@ -24,7 +24,7 @@ export default function Testimonials() {
           </p>
           <div className="testimonial__name">-Neha Choudhary</div>
           <div className="testimonial__switch">
-            <div className="next">
+            {/* <div className="next">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -53,7 +53,7 @@ export default function Testimonials() {
                   d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
                 />
               </svg>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

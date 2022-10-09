@@ -9,6 +9,19 @@
   word-spacing: 0.0125em;
 }
 
+body,
+html,
+main {
+  overflow-x: hidden;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.app-header {
+  width: 100vw;
+}
+
 h1,
 h2,
 h3,

@@ -117,3 +117,54 @@
 .margin-bottom {
   margin-bottom: 5rem;
 }
+
+/* =======================
+SECTION === 'responsive' === SECTION
+======================= */
+
+@media (max-width: 1300px) {
+  .products {
+    width: 70vw;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  .products__wrapper {
+    width: 90vw;
+    align-content: center;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .products__heading-container {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
+  .product__card {
+    width: 80%;
+  }
+
+  .product__img {
+    width: 100%;
+  }
+
+  .margin-left {
+    margin-left: 0rem;
+  }
+
+  .margin-right {
+    margin-left: 0rem;
+  }
+
+  .margin-top {
+    margin-top: 0rem;
+  }
+
+  .margin-bottom {
+    margin-bottom: 0rem;
+  }
+}

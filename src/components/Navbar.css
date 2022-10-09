@@ -1,15 +1,15 @@
 nav {
   display: flex;
+  width: 100vw;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  width: 100%;
   margin: 0.5rem auto;
   position: fixed;
   color: rgba(255, 255, 255, 0.658);
   font-weight: bold;
   z-index: 1000;
-  margin-top: 0;
+  margin-top: -0.5rem;
   padding: 0.5rem 0;
   transition: all 0.25s ease-out;
 }
@@ -19,7 +19,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 3rem;
-  margin-left: 18vw;
+  margin-left: 10vw;
 }
 
 .nav__list li {
@@ -38,16 +38,16 @@ nav {
 .nav__logo {
   height: 2.5rem;
   position: absolute;
-  top: 50%;
+  top: 1.2rem;
   left: 50%;
+  transform: translateX(-50%);
   z-index: 100;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
 }
 
 .nav__contact {
   font-size: 1rem;
-  margin-right: 20vw;
+  margin-right: 10vw;
+  margin-top: 0.5rem;
   background-color: #f5a623;
   color: white;
   font-family: inherit;
@@ -63,6 +63,22 @@ nav {
   background-color: #cf8b1c;
 }
 
+.hamburger {
+  all: unset;
+  flex-direction: column;
+  gap: 10px;
+  width: 50px;
+  padding: 0.2rem;
+  margin-left: 10vw;
+  margin-top: 0.5rem;
+  display: none;
+}
+
+.hamburger__line {
+  width: 40px;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+}
 /* helper classes  */
 
 .active {
@@ -70,5 +86,62 @@ nav {
   box-shadow: 0 8px 24px rgb(0 0 0 / 10%);
   background: rgba(255, 255, 255, 0.7);
   color: rgb(48, 48, 48);
-  margin-top: 0;
+  margin-top: -0.5rem;
+}
+
+.active .hamburger__line {
+  background-color: black;
+}
+
+.nav__side-nav {
+  position: fixed;
+  left: 0;
+  height: 100vh;
+  list-style: none;
+  background-color: white;
+  color: black;
+  top: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 2rem 4rem;
+  margin: 0;
+  z-index: 99999;
+}
+
+.nav__side-nav__container {
+  position: relative;
+}
+
+.side-nav__close-btn {
+  font-family: inherit;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  position: absolute;
+  left: 0.5rem;
+  top: 1rem;
+  z-index: 9999999;
+}
+
+/* =======================
+SECTION === 'responsiveness' === SECTION
+======================= */
+
+@media (max-width: 1300px) {
+  .nav__list {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav__contact {
+    margin-right: 1rem;
+  }
 }

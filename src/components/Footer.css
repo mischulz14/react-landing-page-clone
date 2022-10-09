@@ -76,3 +76,35 @@
   font-size: 0.8rem;
   font-weight: lighter;
 }
+
+/* =======================
+SECTION === 'responsive' === SECTION
+======================= */
+
+@media (max-width: 1300px) {
+  .footer__wrapper {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer__wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .footer__wrapper p {
+    padding-right: 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer__wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer__wrapper p {
+    padding-right: 0rem;
+  }
+}

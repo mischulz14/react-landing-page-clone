@@ -70,3 +70,40 @@
   scale: 1.05;
   background-color: #cf8b1c;
 }
+
+/* =======================
+SECTION === 'responsive' === SECTION
+======================= */
+
+@media (max-width: 1300px) {
+  .cta__wrapper {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .cta__wrapper {
+    width: 100vw;
+  }
+
+  .cta__content {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .cta__wrapper {
+    flex-direction: column;
+  }
+
+  .cta__content p {
+    font-size: 1.4rem;
+  }
+
+  .cta__icon {
+    transform: scale(0.7);
+  }
+}

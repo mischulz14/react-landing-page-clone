@@ -4,7 +4,7 @@ h4 {
 }
 
 .highlights {
-  width: 100%;
+  width: 100vw;
   margin-bottom: 5rem;
 }
 
@@ -26,8 +26,8 @@ h4 {
 
 .highlights__grid {
   display: grid;
-  gap: 2rem;
-  grid-template-columns: 65% 35%;
+  gap: 1rem;
+  grid-template-columns: 65% 33%;
   grid-template-areas:
     'left right-top'
     'left right-bottom';
@@ -96,4 +96,33 @@ h4 {
   transform-origin: 50% 50%;
   -webkit-transition: all 0.25s ease-out;
   transition: all 0.25s ease-out;
+}
+
+/* =======================
+SECTION === 'responsive' === SECTION
+======================= */
+
+@media (max-width: 1300px) {
+  .highlights__wrapper {
+    width: 70vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .highlights__wrapper {
+    width: 100%;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .highlights__grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'left'
+      'right-top'
+      'right-bottom';
+  }
 }
